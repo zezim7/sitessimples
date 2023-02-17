@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+html{scroll-behavior:smooth;
+  overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ /* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+body{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+.one{
+width: 100vw;
+height: 100vh;
+background-image: url(https://marketplace.canva.com/W8k0A/MAEFj0W8k0A/1/s2/canva-modern-building-architecture-MAEFj0W8k0A.jpg);
+background-size: cover; 
+filter: blur(0.7px);
+overflow: hidden;
+display: flex;
+border:  black;
+}
+.LTDA{
+margin: 30px;
+position: absolute;
+top: 5%;
+left: 5%;
+color:#000000a8;
+}
+.LTDA span{
+display: flex;
+left: 99%;
+position: absolute;
+top:24px ;
+}
+.primeiro{
+position: absolute;
+top: 40%;
+left: 18%;
+display: flex;
+}
+.primeiro ul{
+display: ;
+}
+.primeiro ul li{
+margin: 10px;
+list-style: none;
+color: aliceblue;
+}
+.primeiro ul li:nth-child(1){font-size:larger; text-align: center; font-weight: bolder;}
+.primeiro ul li:nth-child(2){
+font-size:xx-large;
+width: 300px;
+text-align: center;
+margin-bottom: 20px;
+}
+.primeiro ul li:nth-child(3){
+background-color: aliceblue;
+text-align: center;
+color: black;
+padding: 5px;
+border-radius: 10px;
+}
+.primeiro a{text-decoration: none; color: black;font-weight: bolder;}
+/*Segunda página*/
+.two{
+background-color: #000000; 
+overflow: hidden; 
+display: flex;
+width: 100vw;
+height: 100vh;
+justify-content: center;
+align-items: center;
+}
+.grid-um{
+display: grid;
+max-width: 1200px;
+grid-template-columns: repeat(2, 1fr );
+gap: 30px;
+border-radius: 10px;
+
+}
+.grid-um div{
+background-color: #C3B090;
+min-height: 300px;
+border-radius: 10px;
+width: 500px;
+height: 100px;
+}
+.grid-um div:nth-child(1){
+background-image: url(https://marketplace.canva.com/MADQ4wRAGr4/1/screen/canva-modern-architectural-building-MADQ4wRAGr4.jpg);
+background-size: cover;
+transition: 0.7s;
+}
+.grid-um div:nth-child(2){
+background-image: url(https://marketplace.canva.com/MADQ44UEZxk/1/screen/canva-modern-architectural-building-MADQ44UEZxk.jpg);
+background-size: cover;
+transition: 0.7s;
+}
+.grid-um div:nth-child(3){
+background-image: url(https://marketplace.canva.com/ADbP0/MAEYNFADbP0/1/s2/canva-modern-architectural-building-design-MAEYNFADbP0.jpg);
+background-size: cover;
+transition: 0.7s;
+}
+.grid-um div:nth-child(4){
+background-image: url(https://marketplace.canva.com/ZVvnk/MAEMJqZVvnk/1/s2/canva-modern-building-with-glass-walls-MAEMJqZVvnk.jpg);
+background-size: cover;
+transition: 0.7s;
+}
+.grid-um div:nth-child(1):hover{
+  transform: scale(1.1);  
+}.grid-um div:nth-child(2):hover{
+  transform: scale(1.1);  
+}.grid-um div:nth-child(3):hover{
+  transform: scale(1.1);  
+}
+.grid-um div:nth-child(4):hover{
+  transform: scale(1.1);  
+}
+.three{
+width: 100vw;
+height: 20vh;
+background-color: #4D4D4D; 
+overflow: hidden; 
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* celular ;-; */
+@media (max-width: 768px){
+.two{
+justify-content: left;
+align-items: baseline;
+height: 1200px;
+}
+.grid-um{
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+width: 100vw;
+height: 100vh;
+gap: 1px;
+padding: 1px;
+}  
+.grid-um div{
+width: 100%;
+}
+}
+/* General button style */
+.btn {
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+  padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+  background: rgba(0,0,0,0.15);
+}
+
+/* Button 1 */
+.btn-1 {
+  background: #070707a4;
+  color: rgb(253, 253, 253);
+}
+
+.btn-1:hover {
+  background: #070707;
+}
+
+.btn-1:active {
+  background: #f7f7f7;
+  top: 2px;
+}
+
+.btn-1:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button 2 */
+.btn-2 {
+  background: #5F5F5F;
+  color: rgb(253, 253, 253);
+}
+
+.btn-2:hover {
+  background: #5F5F5F;
+}
+
+.btn-2:active {
+  background: #f7f7f7;
+  top: 2px;
+}
+
+.btn-2:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button 3 */
+.btn-3 {
+  background: #2B2B2B;
+  color: rgb(253, 253, 253);
+}
+
+.btn-3:hover {
+  background: #2B2B2B;
+}
+
+.btn-3:active {
+  background: #f7f7f7;
+  top: 2px;
+}
+
+.btn-3:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button 3 */
+.btn-4 {
+  background: #868686;
+  color: rgb(253, 253, 253);
+}
+
+.btn-4:hover {
+  background: #868686;
+}
+
+.btn-4:active {
+  background: #f7f7f7;
+  top: 2px;
+}
+
+.btn-4:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Icons */
+
+.icon-cart:before {
+  content: "\f07a";
+}
+
+.icon-heart:before {
+  content: "\f55a";
+}
+
+.icon-info:before {
+  content: "\f05a";
+}
+
+.icon-send:before {
+  content: "\f1d8";
+}
+.lateral1{
+width: auto;
+height: auto;
+display: flex;
+width: 100vw;
+height: 100vh;
+position:absolute;
+}
+.lateral{
+position:fixed;
+width: 65px;
+height: 30px;
+border-radius: 30px;
+z-index: 3;
+text-align: center;
+left: 90%;
+top: 90%;
+background: rgba(252, 252, 252, 0.24);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
+border: 1px solid rgba(252, 252, 252, 0.38);
+}
+.lateral1 a{
+text-decoration: none;
+color: black;
+text-transform: none;
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+</style>
+<body>
+    <div class="lateral1"><a href="#one"><div class="lateral">Início</div></a></div>
+    <div class="one" id="one"></div>
+    <div class="LTDA"><h1>Arquitetura <span>LTDA.</span></h1></div>
+    <section class="primeiro">
+        <ul>
+            <li>O DESIGNER DO AMANHÃ</li>
+            <li>Esteja preparado para o futuro.</li>
+            <li><a href="#two-two">saiba mais</a></li>
+        </ul>    
+    </section>
+    <div class="two" id="two-two">
+    <div class="grid-um">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+    </div>
+    <div class="three">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <button class="btn btn-1 btn-sep icon-info">Sobre</button>
+    <button class="btn btn-2 btn-sep icon-cart">Nossa Loja</button>
+    <button class="btn btn-3 btn-sep icon-heart">Instagram</button>
+    <button class="btn btn-4 btn-sep icon-send">Whatsapp</button>
+    </div>
+    
+</body>
+</html>
